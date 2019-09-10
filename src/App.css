@@ -20,3 +20,24 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+
+  .logo {
+    width: 15%;
+    margin: 20px
+  }
+
+
+
+
+.calcboxOne .numberButtons   {
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  box-shadow: 1px 1px black;
+  color: white;
+  background: #1f61af;
+  margin: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  }

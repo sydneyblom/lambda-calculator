@@ -29,15 +29,11 @@
 
 
 
-
-.calcboxOne .numberButtons   {
-  border-radius: 50%;
-  border: none;
-  font-size: 20px;
-  box-shadow: 1px 1px black;
-  color: white;
-  background: #1f61af;
-  margin: 5px;
-  display: flex;
-  flex-direction: row-reverse;
+  button{
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 3px;
+    justify-content: center;
   }

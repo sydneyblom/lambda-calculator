@@ -19,14 +19,22 @@ function App() {
   const [displayValue, setDisplayValue] = useState('0');
   const addNumber = (number) => {
     setDisplayValue(displayValue => displayValue + number)
-  }
+  };
+  const addOperator = (operator) => {
+    if (operator === "=") {
+      setDisplayValue(displayValue => eval(displayValue));
+    } else {
+    setDisplayValue(displayValue => displayValue + " " + operator + " ");
+    }
+  };
+
   return (
     <div className="container">
       <Logo />
       <div className="App">
-      <Display />
-        <Operators />
-        <Numbers />
+      <Display number={displayValue} />
+        <Operators addOperator={addOperator} />
+        <Numbers addNumber={addNumber} />
         <Specials />
      
 

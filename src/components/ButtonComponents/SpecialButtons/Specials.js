@@ -7,16 +7,15 @@ import SpecialButton from "./SpecialButton"
 //Import your array data to from the provided data file
 
 
-export default function Specials() {
-  const [specialsState, setSpecialsState] = useState(specials);
+const Specials = () => {
+  // STEP 2 - add the imported data to state
+
+ 
   return (
     <div>
-    <div className="button_container">
-    {specialsState.map((specials, index) => (
-      <SpecialButton key={index} specials={specials} />
-    ))}
-    </div>
-    </div>
+     {specials.map(special => <SpecialButton text={special}/>)}
+  </div>
   );
-}
+};
 
+export default Specials; 

@@ -3,16 +3,20 @@ import { numbers } from "../../../data"
 import NumberButton from "./NumberButton"
 
 
-export default function Numbers() {
-  const [numbersState, setNumbersState] = useState(numbers);
-  
+const Numbers = (props) => {
+  const [buttonNumbers, setButtonNumber] = useState(numbers);
+  console.log("numbers", props);
 
   return (
     <div>
-    {numbersState.map((number, index) => (
-      <NumberButton key={index} numbers={number} />
-    ))}
-    </div>
+       {buttonNumbers.map(number => {
+                     return <NumberButton key={number} 
+                                          text={number} 
+                                          addNumber={props.addNumber}/>;
+  })}
+ </div>
   );
+
 }
 
+export default Numbers;

@@ -1,11 +1,14 @@
 import React from "react";
 import "../../App"
 
-const Display = props => {
 
-	return ( <div className="display"> 
-  {props.display}
-  </div>);
+const Display = (props) => {
+  console.log("Display")
+  return (
+    <div className="display">
+      {props.number}
+    </div>
+  );
 };
 
-export default Display; 
+export default Display;

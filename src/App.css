@@ -20,3 +20,20 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+
+  .logo {
+    width: 15%;
+    margin: 20px
+  }
+
+
+
+  button{
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 3px;
+    justify-content: center;
+  }
